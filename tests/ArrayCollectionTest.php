@@ -1,5 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
+namespace MamadouAlySy\Tests;
+
 use PHPUnit\Framework\TestCase;
 use MamadouAlySy\ArrayCollection;
 
