@@ -5,16 +5,16 @@ declare(strict_types=1);
 namespace MamadouAlySy\Tests;
 
 use PHPUnit\Framework\TestCase;
-use MamadouAlySy\ArrayCollection;
+use MamadouAlySy\ParameterBag;
 
-class ArrayCollectionTest extends TestCase
+class ParameterBagTest extends TestCase
 {
-    protected ArrayCollection $bag;
+    protected ParameterBag $bag;
 
     protected function setUp(): void
     {
         parent::setUp();
-        $this->bag = new ArrayCollection(['item1' => 1]);
+        $this->bag = new ParameterBag(['item1' => 1]);
     }
 
     public function testCanStoreAValueInsideTheBag()

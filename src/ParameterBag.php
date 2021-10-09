@@ -4,7 +4,7 @@ declare (strict_types = 1);
 
 namespace MamadouAlySy;
 
-class ArrayCollection
+class ParameterBag
 {
     protected array $items;
 
