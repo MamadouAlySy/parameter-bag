@@ -38,10 +38,6 @@ class ParameterBag
         unset($this->items[$key]);
     }
 
-    public function clone (): self {
-        return clone $this;
-    }
-
     public function flush(string $key): mixed
     {
         $value = $this->get($key);
