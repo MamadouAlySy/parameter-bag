@@ -38,4 +38,11 @@ class ParameterBagTest extends TestCase
         $this->bag->remove('item1');
         $this->assertFalse($this->bag->contains('item1'));
     }
+
+    public function testCanFlushAValueInsideTheBag()
+    {
+        $value = $this->bag->flush('item1');
+        $this->assertFalse($this->bag->contains('item1'));
+        $this->assertEquals(1, $value);
+    }
 }
