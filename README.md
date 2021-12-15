@@ -13,6 +13,5 @@ $bag = new \MamadouAlySy\ParameterBag();
 
 $bag->add('name', 'Mamadou');
 $bag->has('name') // return true
-$bag->get('name') // return Mamadou
-$bag->getCount() // return 1;
+count($bag) // return 1;
 ```
