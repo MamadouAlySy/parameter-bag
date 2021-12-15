@@ -13,7 +13,7 @@ class BagTest extends TestCase
     protected function setUp(): void
     {
         parent::setUp();
-        $this->bag = new Bag(['item1' => 1]);
+        $this->bag = new Bag(['item1' => 1, 'item2' => 2]);
     }
 
     /** @test */
@@ -40,5 +40,12 @@ class BagTest extends TestCase
     {
         $this->bag->remove('item1');
         $this->assertFalse($this->bag->contains('item1'));
+    }
+
+    /** @test */
+    public function canEmptyTheBag()
+    {
+        $this->bag->clear();
+        $this->assertFalse($this->bag->contains('item2'));
     }
 }

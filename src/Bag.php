@@ -64,4 +64,12 @@ class Bag implements BagInterface
     {
         return count($this->items);
     }
+
+    /**
+     * @inheritDoc
+     */
+    public function clear(): void
+    {
+        $this->items = [];
+    }
 }

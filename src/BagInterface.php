@@ -46,4 +46,11 @@ interface BagInterface extends Countable
      * @return void
      */
     public function remove(string $key): void;
+
+    /**
+     * Empty the bag
+     *
+     * @return void
+     */
+    public function clear(): void;
 }
